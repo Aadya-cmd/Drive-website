@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Links</title>
+    <style>
+        /* Background and font styling */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3b8d99, #6baf92);
+            color: #fff;
+        }
+
+        /* Container for centering content */
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+        }
+
+        /* Styling for the heading */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        /* Styling for the paragraph */
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+
+        /* Styling for buttons */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* Hover effect for buttons */
+        .button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Different colors for each button */
+        .cs-button {
+            background-color: #2196F3;
+        }
+
+        .workshop-button {
+            background-color: #FF9800;
+        }
+
+        /* Animation for container appearance */
+        .container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Access Google Drive Folders</h1>
+        <p>Click the buttons below to access your folders for CS and Workshop Practice.</p>
+        
+        <!-- CS Folder Button -->
+        <button class="button cs-button" onclick="window.location.href='https://drive.google.com/drive/folders/10iohmeCWqri1jlAPsZZ9VaPH1grXNndV?usp=drive_link';">CS Folder</button>
+        
+        <!-- Workshop Practice Folder Button -->
+        <button class="button workshop-button" onclick="window.location.href='https://drive.google.com/drive/folders/1KxyPUq61Zb2HTyUgQZSQNfWMkOECzfZA?usp=sharing';">Workshop Practice Folder</button>
+    </div>
+</body>
+</html>
